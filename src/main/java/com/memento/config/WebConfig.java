@@ -13,10 +13,12 @@ public class WebConfig implements WebMvcConfigurer{
         registry.addMapping("/**")
         .allowedOrigins("*")
         .allowedMethods(
-            	HttpMethod.GET.name(),
-            	HttpMethod.HEAD.name(),
-            	HttpMethod.POST.name(),
-            	HttpMethod.PUT.name(),
-            	HttpMethod.DELETE.name());
+        		"GET","POST","PUT","DELETE"
+//            	HttpMethod.GET.name(),
+//            	HttpMethod.HEAD.name(),
+//            	HttpMethod.POST.name(),
+//            	HttpMethod.PUT.name(),
+//            	HttpMethod.DELETE.name()
+            	);
     }
 }
